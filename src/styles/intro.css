@@ -1,0 +1,74 @@
+.introContainer {
+    background-image: url('https://github.com/prabinmagar/photographer-portfolio-site-html-css/blob/master/images/header-banner.jpg?raw=true');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+
+
+}
+
+.intro {
+   
+    display: flex;
+}
+
+.introWrapper {
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;
+    align-items: start;
+    margin-left: 50px;
+
+}
+
+
+
+.name {
+    color: white;
+    font-size: 80px;
+    margin: 0;
+    letter-spacing: 5px;
+
+}
+
+.job {
+    letter-spacing: 7px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.iconsWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.down a{
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+  
+}
+
+
+@media screen and (max-width: 564px) {
+    .name{
+        font-size: 40px;
+    }
+
+    .introWrapper{
+         margin-top: 400px;
+    }
+
+
+}
+
+

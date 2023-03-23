@@ -1,0 +1,116 @@
+.aboutContainer {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.left {
+    margin: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    align-items: start;
+    text-align: justify;
+    line-height: 40px;
+    color: whitesmoke;
+    position: relative;
+}
+
+
+
+
+.line {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid whitesmoke;
+    width: 80px;
+    top: 55px;
+    left: 0%;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.tibWrapper {
+    background-color: black;
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tiberiu {
+    height: 60vh;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.desc {
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutContainer {
+        height: max-content;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .left {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tibWrapper {
+        width: 25rem;
+        height: 60vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .tiberiu {
+        height: 60vh;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+
+    .line {
+        display: none;
+    }
+
+
+}
+
+

@@ -1,0 +1,106 @@
+.family {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: max-content;
+    padding: 80px;
+    color: whitesmoke;
+    
+}
+
+
+.grid {
+    gap: 20px;
+}
+
+.nakedWrapper {
+    position: relative;
+}
+
+.lineFamily {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid  whitesmoke;
+    width: 80px;
+    top: -5px;
+    left: 0;
+}
+
+.card {
+    transition: transform .9s;
+    border: none;
+}
+.card:hover {
+    position: relative;
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+
+.card:hover .overlay {
+    cursor: pointer;
+    opacity: 1;
+    position: absolute;
+ 
+}
+
+.overlay {
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.hoverText {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: whitesmoke
+}
+
+.footer a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.redirect {
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+    .lineFamily{
+        display: none;
+    }
+
+    .family {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        transition: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}
