@@ -1,0 +1,50 @@
+
+
+.submit-btn {
+    border: none;
+    background-color: black;
+    color: antiquewhite;
+    width: 100px;
+    font-family: 'Lora';
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border: 1px solid palevioletred;
+}
+
+.submit-btn:hover {
+    background-color: rgb(120, 120, 120);
+    color: palevioletred;
+    border: 1px solid palevioletred;
+}
+
+#notifyToast {
+    color: green;
+    border-radius: 6px;
+    width: 200px;
+    margin-left: 75px;
+    background-color: white
+}
+
+.input {
+    border-radius: none;
+}
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 564px) {
+    .first{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .ContactForm {
+        gap: 15px;
+    }
+}

@@ -4,10 +4,10 @@ import images from '../family.json'
 
 const Family = () => {
   return (
-    <div className='family'>
-    <h1>THE FAMILY COLLECTION</h1>
+    <div className='family' id='family'>
+    <h1 className='ms-3'>THE FAMILY COLLECTION</h1>
     <div className='nakedWrapper'>
-        <span className='lineFamily'></span>
+        <span className='lineFamily ms-3'></span>
         <div className='mx-auto px-3'>
             <div className='grid container d-flex justify-content-center align-items-center flex-wrap'>
                 {images.map(image => (
@@ -21,8 +21,8 @@ const Family = () => {
             </div>
         </div>
         <footer className='footer d-flex justify-content-center mt-5'>
-            <a href='http://www.instagram.com' target='_blank'>
-                <p className='redirect'>See the full collection...</p>
+            <a href='https://tiberiucapudean.wixsite.com/naked/family' target='_blank'>
+                <p className='familyRedirect'>See the full collection...</p>
             </a>
         </footer>
     </div>
