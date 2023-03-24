@@ -18,7 +18,7 @@ const ContactForm = () => {
   const {register, handleSubmit, reset, formState: {errors}} = useForm()
 
   const toastifySuccess = () => {
-    toast("We'll be in touch soon!", {
+    toast("Thanl you for your message.", {
       position: 'bottom-center',
       autoClose: 5000,
       hideProgressBar: true,
@@ -57,11 +57,10 @@ const ContactForm = () => {
   return (
 
     <div className='ContactForm' id='contact'>
-                <h1 className='mb-3'>CONTACT</h1>
-              <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
+              <form className='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
                 <div className='first'>
-                  <div className=''>
+                  <div className='box'>
                     <input
                       type='text'
                       name='name'
@@ -74,7 +73,7 @@ const ContactForm = () => {
                     ></input>
                     {errors.name && <span className='errorMessage' style={{color:'red'}}>{errors.name.message}</span>}
                   </div>
-                  <div className=''>
+                  <div className='box'>
                     <input
                       type='email'
                       name='email'
@@ -118,7 +117,7 @@ const ContactForm = () => {
                 <div className='row formRow mb-4'>
                   <div className='col'>
                     <textarea
-                      rows={5}
+                      rows={8}
                       name='message'
                       {...register('message', {
                         required: true
@@ -133,7 +132,6 @@ const ContactForm = () => {
                   Send
                 </button>
               </form>
-              {success && (<span style={{color: 'green'}}>Message sent</span>)}
             <ToastContainer />
           </div>
 

@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import Nav from './components/Nav';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -15,6 +16,7 @@ function App() {
       <Naked />
       <Family />
       <Contact />
+      <Footer />
     </div>
   );
 }

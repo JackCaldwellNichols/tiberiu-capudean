@@ -2,7 +2,6 @@
     background-image: url('https://github.com/prabinmagar/photographer-portfolio-site-html-css/blob/master/images/header-banner.jpg?raw=true');
     background-size: cover;
     height: 100vh;
-    width: 100vw;
     object-fit: cover;
     position: relative;
     display: flex;

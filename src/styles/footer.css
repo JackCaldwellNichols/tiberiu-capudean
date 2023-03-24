@@ -1,0 +1,44 @@
+.bottom {
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+}
+
+.footerIconWrapper a{
+   color: whitesmoke;
+
+}
+
+.footerIconWrapper a:hover{
+    color: rgb(182, 181, 181);
+ 
+ }
+ 
+
+.press{
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.press:hover{
+    color: rgb(182, 181, 181);
+}
+
+@media screen and (max-width:568px) {
+    
+}

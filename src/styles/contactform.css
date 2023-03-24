@@ -1,21 +1,25 @@
+.form-control {
+    border-radius: 0;
+}
 
+.box{
+    gap: 50px;
 
+}
 .submit-btn {
     border: none;
     background-color: black;
     color: antiquewhite;
     width: 100px;
     font-family: 'Lora';
-    padding: 5px;
     cursor: pointer;
     transition: 0.5s ease;
-    border: 1px solid palevioletred;
+    align-self: center;
 }
 
 .submit-btn:hover {
-    background-color: rgb(120, 120, 120);
-    color: palevioletred;
-    border: 1px solid palevioletred;
+    background-color: rgb(60, 60, 60);
+
 }
 
 #notifyToast {
@@ -29,11 +33,25 @@
 .input {
     border-radius: none;
 }
+
 .first {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 15px;
+    gap: 30px;
+    
+}
+
+
+
+.contact-form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
 }
 
 
@@ -46,5 +64,17 @@
 
     .ContactForm {
         gap: 15px;
+    }
+
+    .contact-form {
+        gap: 0px;
+    }
+
+    .left {
+        width: 90vw;
+    }
+
+    .form-control {
+        width: 90vw;
     }
 }

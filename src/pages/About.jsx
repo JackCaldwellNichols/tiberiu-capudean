@@ -4,13 +4,13 @@ import photo from '../images/tibs.png'
 
 const About = () => {
   return (
-    <div className='aboutContainer' id='about'>
+    <div className='aboutContainer mx-auto' id='about'>
         <div className='upAbout d-flex justify-content-center align-items-center mb-4 '>
             <a href='#intro'><i class="fa-sharp fa-solid fa-chevron-up fa-beat"></i></a>
         </div>
         <div className='about'>
             <div className='leftAbout'>
-                <h1 className='text-center'> ABOUT ME</h1>
+                <h1> ABOUT ME</h1>
                 <span className='line'></span>
                 <h5 className='desc'>Romanian photographer and LGBTQ+ activist based in Madrid, recipient of the European Tolerance Award 2018.
 
@@ -23,9 +23,9 @@ const About = () => {
 
     I want N•A•K•E•D and •FAMILY• to be emotional journeys for them. I hope that they feel sadness and joy, fear and hope, shame and courage. I hope that they take a good look at my photos and read all the stories, so they can see what homophobia feels like. By knowing and understanding us, they can become our allies."</h5>
             </div>
-            <div className='right'>
-                <div className='tibWrapper'>
-                    <img src={photo} alt='' className='tiberiu'/>
+            <div className='rightAbout'>
+                <div className='tibAboutWrapper'>
+                    <img src={photo} alt='' className='tiberiuAbout'/>
                 </div>
             </div>
         </div>

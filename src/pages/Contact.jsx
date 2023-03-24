@@ -12,6 +12,12 @@ const Contact = () => {
         </div>
         <div className='about'>
             <div className='left'>
+                <div className='contact-title'>
+                   
+                        <h1>CONTACT</h1>
+  
+                    <span className='lineContact'></span>
+                </div> 
                 <ContactForm />
             </div>
             <div className='rightContact'>

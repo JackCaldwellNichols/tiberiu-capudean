@@ -6,13 +6,13 @@ const Naked = () => {
   return (
 
     <div className='nakedContainer' id='naked'>
-    <div className='downNaked d-flex justify-content-center align-items-center mb-4 '>
+    <div className='upNaked d-flex justify-content-center align-items-center mb-4 '>
         <a href='#about'><i class="fa-sharp fa-solid fa-chevron-up fa-beat"></i></a>
     </div>
     <div className='naked'>
-    <h1 className='ms-3'>THE NAKED COLLECTION</h1>
+    <h1>THE NAKED COLLECTION</h1>
     <div className='nakedWrapper'>
-        <span className='lineNaked ms-3'></span>
+        <span className='lineNaked'></span>
         <div className='mx-auto px-3'>
             <div className='grid container d-flex justify-content-center flex-wrap mt-3'>
                 {images.map(image => (
@@ -31,6 +31,9 @@ const Naked = () => {
             </a>
         </footer>
     </div>
+    </div>
+    <div className='downNaked d-flex justify-content-center align-items-center mb-4 '>
+        <a href='#family'><i class="fa-sharp fa-solid fa-chevron-down fa-beat"></i></a>
     </div>
     </div>
   )

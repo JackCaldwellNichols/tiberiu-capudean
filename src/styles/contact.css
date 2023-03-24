@@ -14,7 +14,6 @@
 }
 
 
-
 .about {
     display: flex;
     justify-content: center;
@@ -25,6 +24,8 @@
 .left {
     flex: 1;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     text-align: justify;
@@ -34,19 +35,20 @@
 }
 
 
-.line {
+.lineContact {
     content: "";
     position: absolute;
-    border-bottom: 3px solid whitesmoke;
+    border-bottom: 3px solid #000000;
     width: 80px;
     top: 55px;
-    left: 0%;
+    left: 0px;
 }
 
 .rightContact {
     flex: 1;
     display: flex;
     justify-content: center;
+
 }
 
 .tibWrapperContact {
@@ -69,12 +71,18 @@
 .desc {
     font-size: 20px;
     font-weight: 200;
-
 }
 
-@media screen and (max-width: 1024px) {
+.contact-title {
+    display: flex;
+    align-self: center;
+    position: relative;
+}
+
+@media screen and (max-width: 1350px) {
     .aboutContainer {
         height: max-content;
+      
     }
 
     .about{
@@ -83,20 +91,31 @@
 
     .left {
         justify-content: center;
-        margin: 10px;
+        align-items: center;
     }
 
     .tibWrapper {
        display: none;
     }
 
+    .tibWrapperContact{
+        display: none;
+    }
+
     .tiberiu {
-        height: 60vh;
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
+        display: none;
     }
 
     .line {
+        display: none;
+    }
+
+    .contact-title {
+        display: flex;
+        align-self: center;
+    }
+
+    .lineContact {
         display: none;
     }
 

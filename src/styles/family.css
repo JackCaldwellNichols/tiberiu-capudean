@@ -1,16 +1,35 @@
-.family {
+.familyContainer {
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: max-content;
-    padding: 100px;
+    padding: 50px;
     color: whitesmoke;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
     
 }
 
+.family {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: flex-start;
+
+}
+
+.upFamily {
+    position: absolute;
+    top: 50px;
+}
 
 .grid {
     gap: 20px;
+    margin-top: 20px;
+   
 }
 
 .nakedWrapper {
@@ -23,7 +42,8 @@
     border-bottom: 3px solid  whitesmoke;
     width: 80px;
     top: -5px;
-    left: 0;
+
+    
 }
 
 .card {
@@ -90,7 +110,7 @@
     color: rgb(197, 196, 196);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1285px) {
     .lineFamily{
         display: none;
     }
@@ -100,6 +120,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0px;
     }
 
     .card {
@@ -108,5 +129,11 @@
 
     .card:hover {
         transform: none;
+    }
+}
+
+@media screen and (max-width: 564px){
+    .family h1 {
+        text-align: center;
     }
 }
